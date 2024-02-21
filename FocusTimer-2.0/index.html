@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="discription" content="Temporizador tipo pomodoro">
+  <title>FocusTimer2.0 - Pomodoro</title>
+
+  <link rel="shortcut icon" href="./assets/favicon/favicon.svg" type="image/x-svg">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+  <script type="module" src="./src/main.js"></script>
+</head>
+<body>
+  <main class="flex">
+    <div id="conteiner">
+      <section id="timer" class="flex">
+        <span id="minutes">00</span>
+        <span>:</span>
+        <span id="seconds">00</span>
+      </section>
+        
+      <section id="controls" class="flex">
+        <button id="play">
+          <img 
+            data-action="play"
+            src="./assets/images-buttons/play.svg">
+        </button>
+        <button id="reset">
+          <img 
+            data-action="reset"
+            src="./assets/images-buttons/stop.svg">
+        </button>
+        <button id="plus">
+          <img 
+            data-action="plus"
+            src="./assets/images-buttons/plus.svg">
+        </button>
+        <button id="minus">
+          <img
+            data-action="minus" 
+            src="./assets/images-buttons/minus.svg">
+        </button>
+      </section>
+    </div>
+      
+    <section id="sounds">
+      <div id="cards-top" class="flex">
+        <button
+          id="tree"
+          data-sound="tree">
+          <img
+            data-sound="tree"
+            src="./assets/icons/tree.svg">
+        </button>
+        <button
+          id="rain"
+          data-sound="rain">
+          <img 
+            data-sound="rain"
+            src="./assets/icons/rain.svg">
+        </button>
+      </div>
+      <div id="cards-bottom" class="flex">
+        <button
+          id="coffee-shop"
+          data-sound="coffeeShop">
+          <img 
+            data-sound="coffeeShop"
+            src="./assets/icons/coffee-shop.svg">
+        </button>
+        <button 
+          id="fire"
+          data-sound="fire">
+          <img 
+            data-sound="fire"  
+            src="./assets/icons/fire.svg">
+        </button>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

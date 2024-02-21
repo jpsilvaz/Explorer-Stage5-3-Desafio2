@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --text-color: #323238;
+  --bg-sounds: #E1E1E6;
+  --transition-bg-sounds: #c7c7cc;
+  --bg-secondary-sounds: #02799D;
+  --transition-bg-secondary-sounds: #035d79;
+  --text-secondary-sounds: white;
+
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--text-color);
+  font-size: 12.6rem;
+  display: grid;
+  height: 100vh;
+}
+
+main {
+  gap: 19.2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex {
+  display: flex;
+}
+
+#controls {
+  margin-top: 1.7rem;
+  gap: 4rem;
+}
+
+#controls button {
+  color: var(--text-color);
+  border: none;
+  background-color: transparent;
+
+  cursor: pointer;
+}
+
+#controls button img{
+  height: 4.8rem;
+  width: 4.8rem;
+}
+
+#sounds button {
+  padding: 4.8rem;
+  border-radius: 2.4rem;
+  border: none;
+  cursor: pointer;
+  transition: background 0.5s;
+}
+
+#sounds button:hover:not(.active) {
+  background-color: var(--transition-bg-sounds);
+}
+
+#sounds button img {
+  height: 5.6rem;
+  width: 5.6rem;
+}
+
+#cards-top, #cards-bottom {
+  gap: 3.2rem;
+}
+
+#cards-bottom {
+  margin-top: 3.2rem;
+}
+
+/* botão clicado */
+button:not(.active) {
+  background-color: var(--bg-sounds);
+}
+
+button.active {
+  background: var(--bg-secondary-sounds);
+}
+
+button.active:hover {
+  background-color: var(--transition-bg-secondary-sounds);
+}
+
+button.active img {
+  filter: brightness(0) invert(100%);
+}
+
+
